@@ -11,9 +11,9 @@
                 <x-primary-button tag="a" href="{{ route('books.create') }}">Tambah Data Buku</x-primary-button>
             </div>
             
-            <a href="{{ route('books.pdf') }}" class="btn btn-danger">
-            Export PDF
-            </a>
+            <div class="mb-6">
+           <x-primary-button tag="a" href="{{ route('books.pdf') }}" class="btn btn-danger">Export PDF</x-primary-button>
+            </div>
             <x-table>
                 <x-slot name="header">
                     <tr>

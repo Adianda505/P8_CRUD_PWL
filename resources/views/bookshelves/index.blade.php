@@ -18,8 +18,8 @@
                 <x-slot name="header">
                     <tr>
                         <th>#</th>
-                        <th>Kode Rak</th>
-                        <th>Nama Rak</th>
+                        <th>Kode Rak Buku</th>
+                        <th>Nama Rak Buku</th>
                         <th>Aksi</th>
                     </tr>
                 </x-slot>

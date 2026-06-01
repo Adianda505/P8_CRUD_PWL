@@ -18,9 +18,12 @@
                     <x-nav-link :href="route('book')" :active="request()->routeIs('book')">
                         {{ __('Book') }}
                     </x-nav-link>
-                    {{-- <x-nav-link :href="route('bookshelves')" :active="request()->routeIs('bookshelves')">
+                    <x-nav-link :href="route('bookshelves.index')" :active="request()->routeIs('bookshelves')">
                         {{ __('BookShelves') }}
-                    </x-nav-link> --}}
+                    </x-nav-link>
+                    <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories')">
+                        {{ __('categories') }}
+                    </x-nav-link>
                 </div>
             </div>
 

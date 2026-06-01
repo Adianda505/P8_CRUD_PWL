@@ -33,15 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('books/{id}', [BookController::class, 'destroy'])->name('book.destroy');
 
     Route::resource('bookshelves', BookshelfController::class);
-    Route::get('bookshelves', [BookshelfController::class, 'index'])->name('bookshelves');
-    Route::get('/booksheves/create', [BookshelfController::class, 'create'])->name('bookshelf.create');
-    Route::post('/bookshelves', [BookshelfController::class, 'store'])->name('bookshelf.store');
-    Route::get('/bookshelves/{id}/edit', [BookshelfController::class, 'edit'])->name('bookhelf.edit');
-    Route::match(['PUT', 'PATCH'], 'bookshelf/{id}', [BookshelfController::class, 'update'])->name('bookshelf.update');
-    Route::delete('bookshelf/{id}', [BookshelfController::class, 'destroy'])->name('bookshelf.destroy');
-    
-    
-    
+
     Route::resource('categories', CategoryController::class);
     Route::resource('loans', LoanController::class);
     Route::resource('loan-detail', loandetailController::class);
