@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-     protected $fillable =[
+    protected $fillable = [
         'title',
         'author',
         'year',
@@ -19,5 +19,12 @@ class Book extends Model
     public function bookshelf()
     {
         return $this->belongsTo(Bookshelves::class);
+    }
+
+    public function category() {}
+
+    public function loanDetails()
+    {
+        return $this->hasMany(LoanDetail::class);
     }
 }
